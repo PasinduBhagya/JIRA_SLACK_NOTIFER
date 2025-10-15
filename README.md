@@ -5,8 +5,6 @@ Ideal for teams that want real-time updates without manual checks.
 
 ---
 
-Create
-
 ## ⚡ Quick Setup
 
 ```bash
