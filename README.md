@@ -150,4 +150,5 @@ sudo journalctl -u monitor-jira.service -n 20
 
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![Systemd](https://img.shields.io/badge/systemd-enabled-green)
-![License](https://img.shields.io/badge/license-MIT-yellow)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue)
+
