@@ -146,7 +146,7 @@ sudo journalctl -u monitor-jira.service -n 20
 
 ---
 
-## 🏷️ Badges (Optional)
+## 🏷️ Badges
 
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![Systemd](https://img.shields.io/badge/systemd-enabled-green)
