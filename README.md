@@ -3,14 +3,19 @@
 A Python-based automation service that monitors JIRA updates and sends notifications to Slack every 5 minutes using `systemd` timers.  
 Ideal for teams that want real-time updates without manual checks.
 
+
+# cd /opt 
 ---
+
+Create
 
 ## ⚡ Quick Setup
 
 ```bash
 # Clone the repo
-git clone https://github.com/pasindubhagya/jira-monitor.git
-cd jira-monitor
+cd /opt 
+git clone https://github.com/PasinduBhagya/JIRA_SLACK_NOTIFER.git
+cd JIRA_SLACK_NOTIFER
 
 # Reload systemd, start and enable timer
 sudo systemctl daemon-reload
@@ -112,7 +117,7 @@ sudo journalctl -u monitor-jira.service -n 20
 ## 🗓️ Schedule Details
 
 - **Runs every:** 5 minutes  
-- **Executes:** `/opt/jira-monitor/main.py`  
+- **Executes:** `/opt/JIRA_SLACK_NOTIFER/main.py`  
 - **Purpose:** Monitors new JIRA updates and sends Slack notifications
 
 ---
@@ -122,7 +127,7 @@ sudo journalctl -u monitor-jira.service -n 20
 - Add error handling and logging to a file  
 - Support multiple JIRA projects  
 - Integrate retry mechanism for failed Slack notifications  
-- Add configuration via `.env` file  
+- Add configuration via `.env` and `monitors.cfg` file  
 - Extend Slack notifications with rich formatting (attachments, buttons)  
 
 ---
@@ -138,9 +143,10 @@ sudo journalctl -u monitor-jira.service -n 20
 ## 🔧 Project Notes
 
 - Ensure Python 3 is installed (`python3 --version`)  
-- Place your Python script at `/opt/jira-monitor/main.py`  
-- Update Slack webhook URL inside your script or via `.env` file  
-- Test manually first: `python3 /opt/jira-monitor/main.py`  
+- Place your Python script at `/opt/JIRA_SLACK_NOTIFER/main.py`  
+- Update JIRA configurations inside your script or via `.env` file  
+- Update Slack webhook URL inside your script or via `monitors.cfg` file  
+- Test manually first: `python3 /opt/JIRA_SLACK_NOTIFER/main.py`  
 
 ---
 

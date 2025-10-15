@@ -3,7 +3,7 @@ import json
 import logging
 import configparser
 
-BASE_DIR = '/opt/jira-monitor/'
+BASE_DIR = '/opt/JIRA_SLACK_NOTIFER/'
 
 config = configparser.ConfigParser()
 config.read(BASE_DIR + '.env')

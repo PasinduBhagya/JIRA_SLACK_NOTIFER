@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 import logging
 from send_slack_notifications import send_slack_notification
 
-BASE_DIR = '/opt/jira-monitor/'
+BASE_DIR = '/opt/JIRA_SLACK_NOTIFER/'
 
 config = configparser.ConfigParser()
 config.read(BASE_DIR + '.env')
