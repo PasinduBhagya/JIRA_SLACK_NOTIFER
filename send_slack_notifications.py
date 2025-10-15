@@ -3,7 +3,7 @@ import json
 import logging
 import configparser
 
-BASE_DIR = '/home/bhagya/Python-Scripts/'
+BASE_DIR = '/opt/jira-monitor/'
 
 config = configparser.ConfigParser()
 config.read(BASE_DIR + '.env')

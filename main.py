@@ -4,7 +4,7 @@ import logging
 
 from check_jira_updates import main_function
 
-BASE_DIR = '/home/bhagya/Python-Scripts/'
+BASE_DIR = '/opt/jira-monitor/'
 
 monitorConfig = configparser.ConfigParser()
 monitorConfig.read(BASE_DIR + 'monitors.cfg')
