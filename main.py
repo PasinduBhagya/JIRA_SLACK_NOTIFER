@@ -4,7 +4,7 @@ import logging
 
 from check_jira_updates import main_function
 
-BASE_DIR = '/opt/JIRA_SLACK_NOTIFER/'
+BASE_DIR = '/opt/jira_slack_notifier/'
 
 monitorConfig = configparser.ConfigParser()
 monitorConfig.read(BASE_DIR + 'monitors.cfg')
