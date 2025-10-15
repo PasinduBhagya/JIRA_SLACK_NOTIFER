@@ -3,8 +3,6 @@
 A Python-based automation service that monitors JIRA updates and sends notifications to Slack every 5 minutes using `systemd` timers.  
 Ideal for teams that want real-time updates without manual checks.
 
-
-# cd /opt 
 ---
 
 Create
