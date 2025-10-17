@@ -164,16 +164,6 @@ sudo journalctl -u monitor-jira.service -n 20
 
 ---
 
-## 🧩 Roadmap
-
-- Add error handling and logging to a file  
-- Support multiple JIRA projects  
-- Integrate retry mechanism for failed Slack notifications  
-- Add configuration via `.env` and `monitors.cfg` files  
-- Extend Slack notifications with rich formatting (attachments, buttons)  
-
----
-
 ## 📚 References
 
 - [systemd Timers Documentation](https://www.freedesktop.org/software/systemd/man/systemd.timer.html)  
