@@ -42,7 +42,7 @@ Example configuration for `monitors.cfg`:
 ```ini
 [MONITOR_1]
 WEBHOOK_URL=https://hooks.slack.com/services/xxxx/yyyy/zzzz
-JQL=project=MYPROJECT AND status="In Progress"
+JQL=project='MYPROJECT AND status="In Progress"'
 NOTIFY_FIELDS=["summary", "status", "assignee"]
 ```
 
