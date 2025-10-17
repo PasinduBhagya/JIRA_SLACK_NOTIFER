@@ -13,6 +13,21 @@ cd /opt
 git clone https://github.com/PasinduBhagya/jira_slack_notifier.git
 cd jira_slack_notifier
 
+# Rename the sample.env file to .env and update the JIRA configuations.
+mv sample.env .env
+nano .env
+
+EMAIL=myemai@example.com
+API_TOKEN=mytoken
+JIRA_URL=https://mysqjiraurl.example.com
+
+# Rename the sample-monitors.cfg and configure the monitors with below information.
+
+[MONITOR_1]
+WEBHOOK_URL=https://webhookurl.example.com
+JQL='JQL Query'
+NOTIFY_FIELDS=["feild_1", "feild_2",]
+
 # Reload systemd, start and enable timer
 sudo systemctl daemon-reload
 sudo systemctl start monitor-jira.timer
